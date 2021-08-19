@@ -1,0 +1,527 @@
+/*
+    bg : #FFFBF7
+    bg2: #E2D2C3
+    bg3: rgba(226, 210, 195, .2)
+    ecriture : #353F27
+    navigation : #1B5734
+/*=============================================================================
+GENERAL
+=============================================================================*/
+html, body{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: #353F27;
+    background: #FFFBF7;
+    font-size: 18px;
+
+}
+h1{
+    font-family: 'Montserrat', sans-serif;
+    color: #353F27;
+    font-size: 48px;
+    font-style: italic;
+    font-weight: bold;
+    margin: 0;
+}
+h2{
+    font-family: Merriweather;
+    color: #353F27;
+    font-size: 36px;
+    line-height: 45px;
+    text-transform: uppercase;
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+h3{
+    text-transform: uppercase;
+    color: #353F27;
+    font-family: Merriweather;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 26px;
+}
+a{
+    font-family: Montserrat;
+    text-transform: uppercase;
+    color: #1B5734;
+    text-decoration:none ;
+    font-weight: 700;
+    font-weight: bold;
+
+   
+}
+li{
+    list-style-type: none;
+}
+p, div{
+    margin: 0;
+    padding: 0;
+}
+
+
+/*=============================================================================
+LAYOUT
+=============================================================================*/
+.wrapper{
+    width: 1200px;
+    margin: auto;
+}
+.image{
+    font-style: italic;
+}
+.entete{
+    background: #E2D2C3;
+    padding:70px 0 ;
+}
+.col{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul.menu_principal{
+    margin: 0;
+
+}
+.menu{
+    background:#1B5734 ;
+    }
+.menu a{
+    color: #ffffff;
+    display: block;
+    padding: 20px 30px;
+    transition: all 1s ease ;
+}
+
+.menu a:hover{
+color: #1B5734;
+background: #ffffff;
+transform: scale(1.05);
+box-shadow:2px 2px 2px 3px #000;
+
+}
+ul.menu{
+    padding: 0;
+}
+.devise{
+    color: #353F27;
+    font-size: 24px;
+    align-self: flex-start;
+    
+}
+/*=============================================================================
+MODULES
+=============================================================================*/
+/*haut de page*/ 
+.titre{
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 0;
+    background-image: url(images/icones/Feuille\ à\ gauche.svg);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: 18px;
+}
+.icon a{
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+}
+li .icon{
+    font-size: 12px;
+    align-items: center;
+}
+li.icon:nth-child(-n+2){
+    margin-right:15px ;
+
+}
+li.icon .contenair{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#menu_burger{
+    position: relative;
+    left: -4000px;
+}
+.recherche a:hover{
+    cursor: pointer;
+    background-color:  #ffffff;
+
+}
+.recherche:hover .loupe{
+    fill:#1B5734;
+}
+.recherche a{
+    padding: 10px;
+}
+.ariane .wrapper{
+  display: flex;
+  margin-top: 5px;
+  flex-direction: row;
+}
+.ariane  li{
+    display: inline-block;
+}
+.titre2{
+    text-align: center;
+}
+.titre2 h2::before{
+    content:url(images/icones/Feuille\ à\ gauche.svg);
+    position: relative;
+    right: 10px;
+}
+.titre2 h2::after{
+content:url(images/icones/Feuille\ à\ droite.svg) ;
+position: relative;
+left: 10px;
+}
+.article{
+    display:flex ;
+    flex-direction:row ;
+    justify-content: space-between;
+}
+.définition{
+  margin-left: 40px; 
+  margin-right: 60px ;
+}
+section.car{
+    display: flex;
+    flex-direction:column ;
+    justify-content: space-around;
+}
+.caracteristique{
+    position: relative;
+    bottom: 55px;
+}
+.prix{
+    font-weight: bold;
+    font-size: 36px;
+    color: #000000;
+    position: relative;
+    bottom: 30px;
+}
+.bouton input{
+background: #1B5734;
+color: #ffffff;
+font-size: 24px;
+padding: 20px;
+position: relative;
+top: 25px;
+}
+.bouton input:hover{
+    cursor: pointer;
+    background-color: white;
+    color:#1B5734;
+}
+.centre{
+    padding-bottom: 100px;
+}
+.similaire h3::before{
+content: url(images/icones/Feuille\ à\ gauche.svg);
+position: relative;
+right: 10px;
+}
+.similaire{
+    background: rgba(226, 210, 195, 0.2);
+    margin-top: 0 ;
+ padding-top:50px ;
+ padding-bottom:50px ;
+} 
+.similaire h3{
+    position: relative;
+    left:20px ;
+
+}
+.contenaire{
+    display: flex;
+    justify-content: space-between;
+}
+.nom{
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+}
+
+footer{
+    background: #E2D2C3;
+    padding-bottom: 50px;
+}
+.groupe{
+    display: flex;
+    justify-content: space-around;
+}
+.reseaux ul{
+    display: flex;
+    justify-content: space-between;
+}
+.liste1 ul{
+    padding-left: 0;
+    margin-top:25px ;
+}
+.liste1 li{
+    line-height: 2em;
+}
+.liste2 ul{
+    padding-left: 0;
+    margin-top:25px ;
+}
+.liste2 li{
+    line-height: 2em;
+}
+.liste3 ul{
+    margin-top: 25px; 
+
+}
+.bas_de_page{
+    text-align: center;
+    padding-top: 25px;
+}
+.ariane a::after{
+    content: ">";
+}
+/* feuille de contact*/
+
+.localisation{
+    display: flex;
+    padding-bottom: 20px;
+}
+.carte{
+    padding-right: 70px;
+}
+.info p{
+    font-size: 32px;
+    padding-bottom: 70px;
+}
+.formulaire{
+    background: rgba(226, 210, 195, 0.2);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.client{
+    display: flex;
+    justify-content: space-between;
+}
+.formulaire h3::before{
+    content:url(images/icones/Feuille\ à\ gauche.svg);
+    position: relative;
+    right: 10px;
+}
+label{
+    display: block;
+    width: 200px;
+    display: inline-block;
+}
+input{
+    margin-top: 15px;
+}
+input#prenom, input#nom, input#telephone, input#mail{
+    padding: 5px;
+    padding-right: 40px;
+
+}
+.adroite{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 200px;
+}
+input[type=submit]{
+    background-color: #1B5734;
+    color: #ffffff;
+    font-size: 24px;
+    padding: 10px;
+}
+.champs{
+    padding-bottom: 20px;
+}
+.droite{
+    margin-right: 200px;
+}
+
+@media all and (max-width:1280px){
+    .wrapper{
+        width: auto;
+        margin: auto;
+    }
+    .titre{
+        display: none;
+    }
+    .entete .wrapper{
+        justify-content: space-evenly;
+    }
+    .article{
+        flex-direction: column;
+        text-align: center;
+    }
+    .définition{
+        padding-bottom: 55px;
+    }
+  .caracteristique p{
+      width: 600px;
+      margin: auto;
+  }  
+  .image {
+    width: 600px;
+    margin: auto;
+  }
+  .contenaire {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+  }
+  .bidule{
+      margin-top: 30px;
+  }
+
+  /*contact*/
+  .formulaire{
+      padding-left: 20px;
+  }
+
+}
+@media all and (max-width:960px){
+   .position{
+       display: none;
+   }
+  
+    #menu_burger{
+        left: 0;
+        margin-left: 20px;
+    }
+   
+    ul.menu_principal{
+        position: relative;
+        left: -4000px;
+    }
+    ul.is_visible{
+        left: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav.menu div.wrapper{
+        justify-content: flex-end;
+        justify-content: space-between;
+    }
+    .ariane{
+        display: none;
+    }
+    .caracteristique p{
+        width: 90%;
+    }
+    .image{
+        width: 90%;
+    }
+    div.définition img{
+        width: 90%;
+        height: auto;
+        padding-top: 20px;
+    }
+    .bouton{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        padding-top: 20px;
+    }
+    .truc, .nom{
+        max-width: 401px;
+        margin-bottom: 30px ;
+        width: 90%;
+    }
+    .truc img{
+        max-width: 401px;
+        width: 90%;
+        height: auto;
+    }
+    .machin{
+        max-width: 386px;
+        width: 90%;
+    }
+    .machin img{
+        max-width: 386px;
+        width: 90%;
+        height: auto;
+    }
+    .bidule{
+        max-width: 386px;
+        width: 90%;
+    }
+    .bidule img{
+        max-width: 386px;
+        width: 90%;
+        height: auto;
+    }
+    .nom{
+        
+        width: 90%;
+    }
+    .liste1{
+        display: none;
+    }
+    .navigation{
+        display: flex;
+        flex-direction: column;
+    }
+    .groupe{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    .liste2, .liste3{
+        text-align: center;
+    }
+    .contact {
+        padding-left: 0;
+    }
+    .reseaux ul {
+        padding-left: 0;
+    }
+    .panier{
+            display: none;
+        }
+    h2, h3 {
+        font-size: 22px;
+    }
+    .similaire h3{
+     margin: auto;
+    }
+    .similaire h3::before{
+        content: none;
+    }
+    /*contact*/
+    .localisation{
+        flex-direction: column;
+    }
+    .info{
+        text-align: center;
+    }
+    textarea, input, iframe{
+        max-width: 100%;
+    }
+    .carte{
+      padding: 20px;
+    }
+    .client{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    label{
+        display: block;
+        width: 0;
+        margin-top: 30px;
+    }
+    .formulaire h3::before{
+        content: none;
+    }
+    .adroite{
+        justify-content: flex-start;
+    }
+    .droite{
+        margin-top: 2rem;
+    }
+    
+}
+
